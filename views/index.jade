@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  each item in items
+    ul#b
+      li
+        p
+          a(href = item.url) #{item.title}
+        p #{item.score} - #{item.comments} - #{item.time}
